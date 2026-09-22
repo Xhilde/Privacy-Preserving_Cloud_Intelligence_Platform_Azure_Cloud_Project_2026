@@ -1,0 +1,302 @@
+[
+  {
+    "org": "org-a",
+    "target_host": "0x7f000001",
+    "scheme": "gopher",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "contains_encoding_obfuscation",
+        "shap_value": -8.666
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      }
+    ]
+  },
+  {
+    "org": "org-a",
+    "target_host": "192.168.1.36",
+    "scheme": "dict",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      },
+      {
+        "feature": "scheme_dict",
+        "shap_value": 2.54
+      }
+    ]
+  },
+  {
+    "org": "org-a",
+    "target_host": "192.168.1.180",
+    "scheme": "dict",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": -3.664
+      },
+      {
+        "feature": "scheme_dict",
+        "shap_value": 2.54
+      }
+    ]
+  },
+  {
+    "org": "org-a",
+    "target_host": "0x7f000001",
+    "scheme": "dict",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "contains_encoding_obfuscation",
+        "shap_value": -8.666
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 2.938
+      }
+    ]
+  },
+  {
+    "org": "org-a",
+    "target_host": "asset-mirror.io",
+    "scheme": "https",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "redirect_count",
+        "shap_value": 9.54
+      },
+      {
+        "feature": "scheme_http",
+        "shap_value": 0.871
+      },
+      {
+        "feature": "scheme_https",
+        "shap_value": 0.762
+      }
+    ]
+  },
+  {
+    "org": "org-b",
+    "target_host": "cdn-cache.rebind-test.io",
+    "scheme": "https",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      },
+      {
+        "feature": "scheme_http",
+        "shap_value": 0.871
+      },
+      {
+        "feature": "scheme_https",
+        "shap_value": 0.762
+      }
+    ]
+  },
+  {
+    "org": "org-b",
+    "target_host": "127.0.0.1",
+    "scheme": "file",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "scheme_file",
+        "shap_value": 2.835
+      },
+      {
+        "feature": "uses_ip_literal",
+        "shap_value": -2.431
+      }
+    ]
+  },
+  {
+    "org": "org-b",
+    "target_host": "[::1]",
+    "scheme": "file",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 2.938
+      },
+      {
+        "feature": "scheme_file",
+        "shap_value": 2.835
+      }
+    ]
+  },
+  {
+    "org": "org-b",
+    "target_host": "0x7f000001",
+    "scheme": "dict",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "contains_encoding_obfuscation",
+        "shap_value": -8.666
+      },
+      {
+        "feature": "scheme_dict",
+        "shap_value": 2.54
+      }
+    ]
+  },
+  {
+    "org": "org-b",
+    "target_host": "100.100.100.200",
+    "scheme": "http",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_metadata_endpoint",
+        "shap_value": 18.038
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      },
+      {
+        "feature": "uses_ip_literal",
+        "shap_value": -2.431
+      }
+    ]
+  },
+  {
+    "org": "org-c",
+    "target_host": "127.0.0.1",
+    "scheme": "file",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": -3.664
+      },
+      {
+        "feature": "scheme_file",
+        "shap_value": 2.835
+      }
+    ]
+  },
+  {
+    "org": "org-c",
+    "target_host": "100.100.100.200",
+    "scheme": "file",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_metadata_endpoint",
+        "shap_value": 18.038
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      },
+      {
+        "feature": "scheme_file",
+        "shap_value": 2.835
+      }
+    ]
+  },
+  {
+    "org": "org-c",
+    "target_host": "cdn-cache.rebind-test.io",
+    "scheme": "https",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "redirect_count",
+        "shap_value": 6.239
+      },
+      {
+        "feature": "scheme_http",
+        "shap_value": 0.871
+      },
+      {
+        "feature": "scheme_https",
+        "shap_value": 0.762
+      }
+    ]
+  },
+  {
+    "org": "org-c",
+    "target_host": "127.0.0.1@attacker-controlled.io",
+    "scheme": "http",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 2.938
+      },
+      {
+        "feature": "uses_ip_literal",
+        "shap_value": -2.431
+      }
+    ]
+  },
+  {
+    "org": "org-c",
+    "target_host": "[::1]",
+    "scheme": "dict",
+    "actual_label": "SSRF",
+    "top_reasons": [
+      {
+        "feature": "ip_is_private",
+        "shap_value": 16.479
+      },
+      {
+        "feature": "redirect_count",
+        "shap_value": 2.938
+      },
+      {
+        "feature": "scheme_dict",
+        "shap_value": 2.54
+      }
+    ]
+  }
+]
