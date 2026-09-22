@@ -6,7 +6,7 @@ random.seed(42)
 np.random.seed(42)
 
 CLOUD_METADATA_IPS = ["169.254.169.254", "100.100.100.200", "metadata.google.internal"]
-PRIVATE_RANGES = ["10.0.0.", "172.16.0.", "192.168.1.", "127.0.0.1"]
+PRIVATE_RANGES = ["10.0.0.", "172.16.0.", "192.168.1.", "192.168.0."]
 EXTERNAL_DOMAINS = ["api.partner.com", "cdn.example.com", "public-api.io", "images.example.net"]
 STEALTH_DOMAINS = ["cdn-cache.rebind-test.io", "asset-mirror.io", "img-proxy-service.net"]
 PARSER_CONFUSION_TARGETS = ["evil-cdn.net", "attacker-controlled.io", "fake-partner-api.com"]
